@@ -1,10 +1,14 @@
 import React from "react"
+import { Slider, Survey, Hero, Projects } from "../components"
 import Layout from "../components/layout"
 
 export default function Home() {
   return (
     <Layout>
-      <h1 className="text-red-500">Hello Gatsby and tailwind</h1>
+      <Hero />
+      <Projects />
+      <Slider />
+      <Survey />
     </Layout>
   )
 }
