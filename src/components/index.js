@@ -1,5 +1,5 @@
 import About from "./About"
-import Background from "./Background"
+
 import Footer from "./Footer"
 import Hero from "./Hero"
 import Layout from "./layout"
@@ -13,7 +13,6 @@ import Title from "./Title"
 
 export {
   About,
-  Background,
   Footer,
   Hero,
   Layout,

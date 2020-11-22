@@ -1,7 +1,12 @@
 import React from "react"
+import Background from "./Background"
 
 const Hero = () => {
-  return <div>Hero</div>
+  return (
+    <div>
+      <Background></Background>
+    </div>
+  )
 }
 
 export default Hero
