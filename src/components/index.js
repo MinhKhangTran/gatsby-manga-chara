@@ -9,7 +9,6 @@ import SearchForm from "./SearchForm"
 import Slider from "./Slider"
 import Sidebar from "./Sidebar"
 import Survey from "./Survey"
-import Title from "./Title"
 
 export {
   About,
@@ -22,5 +21,4 @@ export {
   Slider,
   Sidebar,
   Survey,
-  Title,
 }
