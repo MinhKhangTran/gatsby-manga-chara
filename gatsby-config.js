@@ -5,12 +5,11 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Manga Characters`,
-    description: `Gatsby Airtable Example. Built using Airtable, Gatsby Background Image plugin and React Context API. Containts two sliders, real-time Airtable updates and submenus and Searchbar. Styled using mainly TailwindCss. `,
+    description: `Gatsby Airtable Example. Built using Airtable and Gatsby Background Image plugin. Containts two sliders, real-time Airtable updates. Styled using mainly TailwindCss. `,
     author: `@MKT`,
     titleTemplate: `%s | Gatsby - Airtable`,
     url: `https://gatsby-airtable-design-project.netlify.app/`,
     image: `mainBcg.png`,
-    twitterUsername: `@john_smilga`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
