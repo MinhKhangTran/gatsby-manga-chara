@@ -99,8 +99,8 @@ const Slider = () => {
           )
         })}
         <FaQuoteRight
-          className="text-4xl absolute bottom-0 text-rose-400 transform -translate-x-1/2"
-          style={{ left: "50%" }}
+          className="text-4xl absolute text-rose-400 transform -translate-x-1/2 invisible md:visible"
+          style={{ left: "50%", bottom: "10%" }}
         />
       </section>
     </div>

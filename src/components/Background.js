@@ -14,7 +14,7 @@ const backgroundQuery = graphql`
     }
   }
 `
-const Background = ({ children }) => {
+const Background = ({ children, images }) => {
   const {
     file: {
       childImageSharp: { fluid },
@@ -23,7 +23,7 @@ const Background = ({ children }) => {
   return (
     <Wrapper>
       <BackgroundImage
-        fluid={fluid}
+        fluid={images || fluid}
         Tag="div"
         className="bcg h-screen grid place-items-center object-center object-fit"
         preserveStackingContext={true}

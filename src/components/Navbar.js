@@ -20,7 +20,7 @@ const Navbar = () => {
   const allNodes = [...new Set(nodes.map(node => node.data.page))]
   // console.log(allNodes)
   return (
-    <nav>
+    <nav className="">
       <div className="breite text-fuchsia-100 text-xl font-bold md:flex md:justify-between md:items-center">
         <div className="flex justify-between p-2">
           <h1 className="text-rose-50 text-3xl font-bold italic">Manhwa</h1>
