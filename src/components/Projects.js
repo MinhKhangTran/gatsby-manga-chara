@@ -1,13 +1,26 @@
 import React from "react"
 import Image from "gatsby-image"
 import Title from "./Title"
+import SearchForm from "./SearchForm"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const Projects = ({ projects, page }) => {
+const Projects = ({ projects: data, page }) => {
+  const [projects, setProjects] = React.useState(data)
+  const setBackToAll = () => {
+    setProjects(data)
+  }
   return (
     <div className="bg-rose-100 py-6">
       <Title title="Meine Favoriten" />
+      {!page && (
+        <SearchForm
+          projects={projects}
+          setProjects={setProjects}
+          setBackToAll={setBackToAll}
+        />
+      )}
+
       <section className="breite grid md:grid-cols-3 grid-cols-1 gap-4">
         {projects.map(project => {
           const { id } = project
